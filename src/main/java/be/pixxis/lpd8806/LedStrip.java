@@ -199,17 +199,17 @@ public final class LedStrip {
         fill(0, 255, 0);
         update();
 
-        Thread.sleep(500);
+        Thread.sleep(2000);
 
         fill(0, 0, 255);
         update();
 
-        Thread.sleep(500);
+        Thread.sleep(2000);
 
         fill(255, 0, 0);
         update();
 
-        Thread.sleep(500);
+        Thread.sleep(2000);
 
         allOff();
     }
