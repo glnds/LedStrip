@@ -28,11 +28,38 @@ public class Example {
 
             ledStrip.testStrip();
 
+            Thread.sleep(1000);
+
+            animate(ledStrip);
+
+            Thread.sleep(4000);
+
+            ledStrip.allOff();
+            ledStrip.update();
+
             System.out.println("Test finished.");
 
         } catch (InterruptedException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
         }
     }
 
+    private static void animate(final LedStrip ledStrip) {
+        ledStrip.allOff();
+        ledStrip.setLed(1, 0, 0, 255, 0.6F);
+        ledStrip.setLed(2, 127, 0, 255, 0.6F);
+        ledStrip.setLed(3, 255, 0, 255, 0.6F);
+        ledStrip.setLed(4, 255, 0, 127, 0.6F);
+
+        ledStrip.setLed(5, 0, 0, 255, 0.5F);
+        ledStrip.setLed(8, 0, 0, 255, 0.5F);
+        ledStrip.setLed(6, 127, 0, 255, 0.5F);
+        ledStrip.setLed(7, 127, 0, 255, 0.5F);
+
+        ledStrip.setLed(12, 0, 0, 255, 0.6F);
+        ledStrip.setLed(11, 127, 0, 255, 0.6F);
+        ledStrip.setLed(10, 255, 0, 255, 0.6F);
+        ledStrip.setLed(9, 255, 0, 127, 0.6F);
+        ledStrip.update();
+    }
 }
