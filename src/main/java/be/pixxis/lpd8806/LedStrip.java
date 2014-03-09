@@ -3,6 +3,8 @@ package be.pixxis.lpd8806;
 import com.pi4j.wiringpi.Spi;
 
 /**
+ * Representation of a LPD8806 based led strip.
+ *
  * @author Gert Leenders
  */
 public final class LedStrip {
@@ -188,6 +190,7 @@ public final class LedStrip {
 
     /**
      * Simple test function to test your led strip.
+     *
      * @throws InterruptedException
      */
     public void testStrip() throws InterruptedException {
