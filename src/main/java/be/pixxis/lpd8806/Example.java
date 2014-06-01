@@ -3,13 +3,14 @@ package be.pixxis.lpd8806;
 import com.pi4j.wiringpi.Spi;
 
 /**
- * Simple class to test a led strip.
+ * Simple class which acts both as a simple test class and as an example.
  *
  * @author Gert Leenders
  */
 public class Example {
 
     public static void main(String[] args) {
+
 
         // setup SPI for communication with the led strip.
         int fd = Spi.wiringPiSPISetup(0, 10000000);

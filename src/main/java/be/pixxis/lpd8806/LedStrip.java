@@ -171,6 +171,7 @@ public final class LedStrip {
         if (suspendUpdates) {
             return;
         }
+
         final byte packet[] = new byte[numberOfLeds * 3];
 
         for (int i = 0; i < numberOfLeds; i++) {
