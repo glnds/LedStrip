@@ -1,9 +1,18 @@
 
 ## Description
 
-This Library allows you to control LPD8806 based Led strips.
+This java library allows you to control LPD8806 based Led strips.
 
-I've tested this library with the [Digital RGB LED Weatherproof Strip from Adafruit](http://www.adafruit.com/products/306).
+The library is tested with the use of the [Digital RGB LED Weatherproof Strip from Adafruit](http://www.adafruit.com/products/306).
+
+## Maven install
+
+	<dependency>
+    	<groupId>be.pixxis</groupId>
+        <artifactId>LedStrip</artifactId>
+        <version>1.0</version>
+    </dependency>
+
 
 ### How to connect the Led Strip to the Raspberry Pi
 
