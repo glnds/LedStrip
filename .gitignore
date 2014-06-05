@@ -11,3 +11,4 @@ out/
 *.jar
 *.war
 *.ear
+*.asc
